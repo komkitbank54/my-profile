@@ -25,7 +25,7 @@ export function AboutSection() {
               <dl className="flex flex-col gap-3 text-sm">
                 <div className="flex justify-between">
                   <dt className="text-muted-foreground">Location</dt>
-                  <dd className="text-foreground">Bangkok</dd>
+                  <dd className="text-foreground">Bangkok Test</dd>
                 </div>
                 <div className="flex justify-between">
                   <dt className="text-muted-foreground">Experience</dt>
