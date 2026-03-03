@@ -1,29 +1,27 @@
-name: Deploy Web Profile
+name: Deploy to Mini-PC
 
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
 
 jobs:
-  deploy:
-    runs-on: self-hosted
+  build-and-deploy:
+    runs-on: self-hosted 
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - name: Install Dependencies
+      run: npm install
 
-      - name: Install Dependencies
-        run: npm install
+    - name: Build Project
+      run: npm run build
 
-      - name: Build Next.js
-        run: npm run build
-
-      - name: Start/Restart Application
-
-        run: |
-          pm2 restart web-profile || pm2 start npm --name "web-profile" -- start
+    - name: Restart PM2
+      run: |
+        pm2 restart my-profile
