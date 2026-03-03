@@ -9,19 +9,19 @@ jobs:
     runs-on: self-hosted 
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '22'
-    - name: Install Dependencies
-      run: npm install
+        - name: Setup Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: '20'
 
-    - name: Build Project
-      run: npm run build
+        # 3. สั่ง Deploy ในโฟลเดอร์จริง (แก้ path ให้ตรงเป๊ะๆ นะครับ)
+        - name: Deploy to Server
+          run: |
+            cd /home/ikk/my-profile
 
-    - name: Restart PM2
-      run: |
-        pm2 restart profile
+            git pull origin main
+
+            npm run build
+
+            pm2 restart my-profile || pm2 start npm --name "my-profile" -- start
