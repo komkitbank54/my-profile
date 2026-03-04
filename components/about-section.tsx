@@ -9,13 +9,13 @@ export function AboutSection() {
         <div className="grid gap-10 lg:grid-cols-5">
           <div className="lg:col-span-3 flex flex-col gap-6">
             <p className="text-lg leading-relaxed text-foreground">
-              I&apos;m a full stack developer passionate about crafting polished, pixel-perfect user interfaces that blend thoughtful design with robust engineering.
+              I&apos;m a Software developer who enjoys building things that work.
             </p>
             <p className="leading-relaxed text-muted-foreground">
-              With deep expertise in the JavaScript ecosystem, I build everything from interactive front-end experiences with React and Next.js to scalable backend services with Node.js and Express. I care deeply about performance, accessibility, and clean code architecture.
+              Currently working as a Software Developer with 1+ year of experience in the JavaScript ecosystem. I focus on building clean web applications while actively expanding my skills into backend technologies to become a stronger developer.
             </p>
             <p className="leading-relaxed text-muted-foreground">
-              When I&apos;m not coding, you&apos;ll find me contributing to open-source projects, writing technical articles, or exploring new web technologies. I believe great software comes from empathy for users and attention to detail.
+              Beyond work, I am constantly upskilling in new technologies and personal project. I value continuous improvement and I am eager to contribute to a team that challenges me to grow.
             </p>
           </div>
 
@@ -29,11 +29,11 @@ export function AboutSection() {
                 </div>
                 <div className="flex justify-between">
                   <dt className="text-muted-foreground">Experience</dt>
-                  <dd className="text-foreground">{"5+ years"}</dd>
+                  <dd className="text-foreground">{"1+ years"}</dd>
                 </div>
                 <div className="flex justify-between">
                   <dt className="text-muted-foreground">Focus</dt>
-                  <dd className="text-foreground">Full Stack JS</dd>
+                  <dd className="text-foreground">Full Stack</dd>
                 </div>
                 <div className="flex justify-between">
                   <dt className="text-muted-foreground">Open to</dt>

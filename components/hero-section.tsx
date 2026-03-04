@@ -13,10 +13,12 @@ export function HeroSection() {
           Full Stack Developer
         </p>
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-7xl text-balance">
-          Komkit
+          Komkit Nit.
         </h1>
-        <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-          I build accessible, performant, and modern web experiences. Specializing in JavaScript and the modern web stack from front to back.
+        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+          Building modern web applications with a focus on JavaScript.
+          <br/>I enjoy crafting functional user interfaces and currently expanding
+          <br/>my skills in backend development to become a Full Stack Developer.
         </p>
 
         <div className="mt-10 flex items-center gap-5">
