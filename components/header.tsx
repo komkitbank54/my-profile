@@ -36,7 +36,7 @@ export function Header() {
             activeSection === "hero" ? "text-primary" : "text-foreground"
           }`}
         >
-          {"JD"}
+          {"KK"}
         </a>
 
         <nav className="hidden md:flex items-center gap-1" aria-label="Main navigation">

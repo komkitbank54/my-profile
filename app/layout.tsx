@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'John Doe - Full Stack Developer',
+  title: 'Komkit - Full Stack Developer',
   description:
     'Full stack JavaScript developer building modern web applications with React, Next.js, Node.js, and TypeScript.',
   icons: {
